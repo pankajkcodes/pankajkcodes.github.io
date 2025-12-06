@@ -343,20 +343,27 @@ h6 {
 --------------------------------------------------------------*/
 section {
   overflow: hidden;
-  position: absolute;
+  position: relative;
   width: 100%;
-  top: 140px;
-  bottom: 100%;
-  opacity: 0;
-  transition: ease-in-out 0.4s;
+  top: auto;
+  bottom: auto;
+  opacity: 1;
+  padding-top: 80px;
   z-index: 2;
+  display: none;
+  /* Hide non-active sections */
 }
 
 section.section-show {
-  top: 100px;
+  display: block;
+  /* Show active section */
+  position: relative;
+  /* Ensure it flows correctly */
+  top: 0;
   bottom: auto;
   opacity: 1;
   padding-bottom: 45px;
+  transition: ease-in-out 0.4s;
 }
 
 section .container {
@@ -1187,4 +1194,67 @@ section .container {
 
 .credits a:hover {
   color: #fff;
+}
+
+/*--------------------------------------------------------------
+# Scroll Navigation
+--------------------------------------------------------------*/
+.scroll-navigation {
+  position: fixed;
+  right: 20px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 998;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.scroll-btn {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #18d26e 0%, #35e888 100%);
+  border: 2px solid #18d26e;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(24, 210, 110, 0.4);
+}
+
+.scroll-btn:hover {
+  background: linear-gradient(135deg, #35e888 0%, #18d26e 100%);
+  transform: scale(1.1);
+  box-shadow: 0 6px 20px rgba(24, 210, 110, 0.6);
+}
+
+.scroll-btn:active {
+  transform: scale(0.95);
+}
+
+.scroll-btn i {
+  line-height: 1;
+}
+
+@media (max-width: 768px) {
+  .scroll-navigation {
+    right: 10px;
+    gap: 10px;
+  }
+
+  .scroll-btn {
+    width: 40px;
+    height: 40px;
+    font-size: 16px;
+  }
+}
+
+/* Fix for sticky header layout */
+#header.header-top p,
+#header.header-top .header-btn-container {
+  display: none !important;
 }
