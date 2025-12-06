@@ -37,13 +37,13 @@
   }
 
   /**
-   * Scrolls to an element with header offset
+   * Smoothly scrolls to a section by selector
    */
   const scrollto = (el) => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    })
+    const section = select(el);
+    if (section) {
+      section.scrollIntoView({ behavior: 'smooth' });
+    }
   }
 
   /**
@@ -91,21 +91,17 @@
 
       if (!header.classList.contains('header-top')) {
         header.classList.add('header-top')
-        setTimeout(function() {
-          sections.forEach((item) => {
-            item.classList.remove('section-show')
-          })
-          section.classList.add('section-show')
-
-        }, 350);
-      } else {
-        sections.forEach((item) => {
-          item.classList.remove('section-show')
-        })
-        section.classList.add('section-show')
       }
+      
+      sections.forEach((item) => {
+        item.classList.remove('section-show')
+      })
+      
+      setTimeout(() => {
+        section.classList.add('section-show')
+      }, 50)
 
-      scrollto(this.hash)
+      scrollto(this.hash);
     }
   }, true)
 
@@ -134,7 +130,7 @@
           initial_nav.classList.add('section-show')
         }, 350);
 
-        scrollto(window.location.hash)
+        scrollto(window.location.hash);
       }
     }
   });
@@ -407,4 +403,5 @@
   // Initialize with first section
   showSection(0);
 
+  // Removed custom single-page scroll system for sections. Now using native anchor smooth scrolling only.
 })();

@@ -45,13 +45,6 @@
     <div class="container">
 
       <h1 class="display-1"><a href="index.html">Pankaj</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a> -->
-      <h2>I'm a passionate <span>Application Developer</span> from India</h2>
-
-      <p class="fst-italic">
-        A skilled software engineer with over 3 years of experience in full-stack application development. Proficient in technologies like Flutter, Dart, Java, Kotlin, and backend frameworks such as NodeJS, Express.js, and PHP. Specializes in building cross-platform mobile apps and robust backend systems, with hands-on expertise in state management tools and databases.
-      </p>
 
       <nav id="navbar" class="navbar">
         <ul>
@@ -65,18 +58,38 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <div class="social-links">
-        <a href="https://x.com/pankajkcodes" target="_blank" class="twitter"><i class="bi bi-twitter"></i></a>
-        <a href="https://www.facebook.com/pankajkcodesdev" target="_blank" class="facebook"><i
-            class="bi bi-facebook"></i></a>
-        <a href="https://instagram.com/pankajkcodes" target="_blank" class="instagram"><i
-            class="bi bi-instagram"></i></a>
-        <a href="https://www.linkedin.com/in/pankajkcodes/" target="_blank" class="linkedin"><i
-            class="bi bi-linkedin"></i></a>
-      </div>
+
 
     </div>
   </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <div class="hero-content text-center d-flex flex-column justify-content-center align-items-center"
+    style="min-height: 90vh;">
+    <img src="assets/img/me.jpg" class="rounded-circle shadow mb-4" alt="Pankaj"
+      style="width: 160px; height: 160px; object-fit: cover; border: 6px solid #fff;">
+    <!-- <h1 class="display-3 fw-bold mb-2" style="color: #fff; text-shadow: 0 2px 16px rgba(0,0,0,0.4)">Pankaj</h1> -->
+    <h2 class="mb-3" style="color: #18d26e; font-weight: 600;">Application &amp; Backend Developer</h2>
+    <p class="lead mb-4" style="max-width: 600px; color: #eee;">
+      Skilled in Flutter, Dart, Java, Kotlin, NodeJS, Express.js, PHP, and more. I build cross-platform mobile apps and
+      robust backend systems.
+    </p>
+    <div class="d-flex gap-3 mb-4">
+      <a href="#portfolio" class="btn btn-success btn-lg px-4 shadow">View Portfolio</a>
+      <a href="#contact" class="btn btn-outline-light btn-lg px-4">Contact Me</a>
+    </div>
+    <div class="social-links d-flex gap-3 justify-content-center">
+      <a href="https://x.com/pankajkcodes" target="_blank" class="btn btn-dark btn-lg rounded-circle"><i
+          class="bi bi-twitter"></i></a>
+      <a href="https://www.facebook.com/pankajkcodesdev" target="_blank" class="btn btn-dark btn-lg rounded-circle"><i
+          class="bi bi-facebook"></i></a>
+      <a href="https://instagram.com/pankajkcodes" target="_blank" class="btn btn-dark btn-lg rounded-circle"><i
+          class="bi bi-instagram"></i></a>
+      <a href="https://www.linkedin.com/in/pankajkcodes/" target="_blank" class="btn btn-dark btn-lg rounded-circle"><i
+          class="bi bi-linkedin"></i></a>
+    </div>
+  </div>
+  <!-- End Hero Section -->
 
   <!-- ======= About Section ======= -->
   <section id="about" class="about">
@@ -96,7 +109,8 @@
         <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
           <h3>Application &amp; Backend Developer</h3>
           <p class="fst-italic">
-            Software Developer with <span id="experience1">0</span> years of experience having good exposure in various technologies like - Java,
+            Software Developer with <span id="experience1">0</span> years of experience having good exposure in various
+            technologies like - Java,
             kotlin, flutter, firebase, node.js, express, mongodb, mysql.
           </p>
           <div class="row">
@@ -128,12 +142,19 @@
             </div>
           </div>
           <p>
-            A skilled software engineer with over 3 years of experience in full-stack application development. Proficient in technologies like Flutter, Dart, Java, Kotlin, and backend frameworks such as NodeJS, Express.js, and PHP, Specializes in building cross-platform mobile apps and robust backend systems.  Hands-on expertise in state management tools like Provider and Bloc, and databases including MySQL, MongoDB, and Firebase.
+            A skilled software engineer with over 3 years of experience in full-stack application development.
+            Proficient in technologies like Flutter, Dart, Java, Kotlin, and backend frameworks such as NodeJS,
+            Express.js, and PHP, Specializes in building cross-platform mobile apps and robust backend systems. Hands-on
+            expertise in state management tools like Provider and Bloc, and databases including MySQL, MongoDB, and
+            Firebase.
 
-            Currently working at Rss Infotech Pvt. Ltd.,contributed to impactful projects like Math Formula, Bike9Pro, and Nadijyotish, demonstrating his ability to develop feature-rich applications.  Bachelor of Science degree from VBSPU University and has also earned certifications in Node.js and advanced Flutter development. With a strong foundation in programming, a problem-solving mindset, and excellent work ethic,
-            committed to  <br>delivering high-quality solutions.
-            
-            </p>
+            Currently working at Rss Infotech Pvt. Ltd.,contributed to impactful projects like Math Formula, Bike9Pro,
+            and Nadijyotish, demonstrating his ability to develop feature-rich applications. Bachelor of Science degree
+            from VBSPU University and has also earned certifications in Node.js and advanced Flutter development. With a
+            strong foundation in programming, a problem-solving mindset, and excellent work ethic,
+            committed to <br>delivering high-quality solutions.
+
+          </p>
         </div>
       </div>
 
@@ -380,7 +401,7 @@
                   const startYear = 2021;
                   const currentYear = new Date().getFullYear();
                   const experience = currentYear - startYear;
-                
+
                   document.getElementById('experience').innerText = experience;
                   document.getElementById('experience1').innerText = experience;
                 </script> Good understanding of programming, functional requirements,
@@ -573,8 +594,9 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-1.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>Math Formula | All Formula              </h4>
-              <p>Math Formula | Math Quiz is all-in-one app that delivers a good collection of math formulas across various branches of mathematics, including algebra, geometry, trigonometry, and more. </p>
+              <h4>Math Formula | All Formula </h4>
+              <p>Math Formula | Math Quiz is all-in-one app that delivers a good collection of math formulas across
+                various branches of mathematics, including algebra, geometry, trigonometry, and more. </p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-1.png" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 1"><i class="bx bx-plus"></i></a>
@@ -590,7 +612,8 @@
             <img src="assets/img/portfolio/portfolio-2.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Blank</h4>
-              <p>Blank app provide service to get old phone details. also user can come to our store to provide details of old phone through Blank App .
+              <p>Blank app provide service to get old phone details. also user can come to our store to provide details
+                of old phone through Blank App .
               </p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-2.png" data-gallery="portfolioGallery"
@@ -607,7 +630,8 @@
             <img src="assets/img/portfolio/portfolio-3.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Vaktaa</h4>
-              <p>Vaktaa is driven by a singular vision: to illuminate the path to understanding oneself and making informed life decisions.</p>
+              <p>Vaktaa is driven by a singular vision: to illuminate the path to understanding oneself and making
+                informed life decisions.</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-3.png" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 2"><i class="bx bx-plus"></i></a>
@@ -625,7 +649,8 @@
             <img src="assets/img/portfolio/portfolio-4.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>UpSoftech</h4>
-              <p>A software development company that specializes in creating custom software solutions for businesses of all sizes.</p>
+              <p>A software development company that specializes in creating custom software solutions for businesses of
+                all sizes.</p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-4.png" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
@@ -641,7 +666,8 @@
             <img src="assets/img/portfolio/portfolio-5.png" class="img-fluid" alt="">
             <div class="portfolio-info">
               <h4>Bizotic</h4>
-              <p>We're Bizotic Finance, your gateway to financial freedom. Our mission is simple: to make credit accessible to everyone. </p>
+              <p>We're Bizotic Finance, your gateway to financial freedom. Our mission is simple: to make credit
+                accessible to everyone. </p>
               <div class="portfolio-links">
                 <a href="assets/img/portfolio/portfolio-5.png" data-gallery="portfolioGallery"
                   class="portfolio-lightbox" title="App 3"><i class="bx bx-plus"></i></a>
@@ -690,7 +716,7 @@
           <div class="portfolio-wrap">
             <img src="assets/img/portfolio/portfolio-8.png" class="img-fluid" alt="">
             <div class="portfolio-info">
-              <h4>MeatBeats              </h4>
+              <h4>MeatBeats </h4>
               <p>MeatBeats is an application which sells fish and meat online in Pune region
               </p>
               <div class="portfolio-links">
@@ -748,7 +774,7 @@
             </div>
           </div>
         </div>
-       
+
 
 
       </div>
