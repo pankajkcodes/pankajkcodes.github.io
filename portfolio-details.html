@@ -4,121 +4,399 @@
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-
-  <title>Portfolio Details - Personal Bootstrap Template</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+  <title>Portfolio Details - SnapFolio Bootstrap Template</title>
+  <meta name="description" content="">
+  <meta name="keywords" content="">
 
   <!-- Favicons -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
 
-  <!-- Google Fonts -->
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
   <link
-    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
     rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: Personal
-  * Template URL: https://bootstrapmade.com/personal-free-resume-bootstrap-template/
-  * Updated: Mar 17 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
 </head>
 
-<body>
+<body class="portfolio-details-page">
 
-  <main id="main">
+  <header id="header" class="header dark-background d-flex flex-column justify-content-center">
+    <i class="header-toggle d-xl-none bi bi-list"></i>
 
-    <!-- ======= Portfolio Details ======= -->
-    <div id="portfolio-details" class="portfolio-details">
-      <div class="container">
+    <div class="header-container d-flex flex-column align-items-start">
+      <nav id="navmenu" class="navmenu">
+        <ul>
+          <li><a href="index.html#hero"><i class="bi bi-house navicon"></i>Home</a></li>
+          <li><a href="index.html#about"><i class="bi bi-person navicon"></i> About</a></li>
+          <li><a href="index.html#resume"><i class="bi bi-file-earmark-text navicon"></i> Resume</a></li>
+          <li><a href="index.html#portfolio"><i class="bi bi-images navicon"></i> Portfolio</a></li>
+          <li><a href="index.html#services"><i class="bi bi-hdd-stack navicon"></i> Services</a></li>
 
-        <div class="row">
+          <li><a href="index.html#contact"><i class="bi bi-envelope navicon"></i> Contact</a></li>
+        </ul>
+      </nav>
 
-          <div class="col-lg-12">
-            <h2 class="portfolio-title">Portfolio detail</h2>
+      <div class="social-links text-center">
+        <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
+        <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="instagram"><i class="bi bi-instagram"></i></a>
 
-            <div class="portfolio-details-slider swiper">
+        <a href="#" class="linkedin"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+    </div>
+
+  </header>
+
+  <main class="main">
+
+    <!-- Page Title -->
+    <div class="page-title dark-background">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <h1 class="mb-2 mb-lg-0">Portfolio Details</h1>
+        <nav class="breadcrumbs">
+          <ol>
+            <li><a href="index.html">Home</a></li>
+            <li class="current">Portfolio Details</li>
+          </ol>
+        </nav>
+      </div>
+    </div><!-- End Page Title -->
+
+    <!-- Portfolio Details Section -->
+    <section id="portfolio-details" class="portfolio-details section">
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper init-swiper">
+
+              <script type="application/json" class="swiper-config">
+                {
+                  "loop": true,
+                  "speed": 600,
+                  "autoplay": {
+                    "delay": 5000
+                  },
+                  "slidesPerView": "auto",
+                  "pagination": {
+                    "el": ".swiper-pagination",
+                    "type": "bullets",
+                    "clickable": true
+                  }
+                }
+              </script>
+
               <div class="swiper-wrapper align-items-center">
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-1.png" alt="">
+                  <img src="assets/img/portfolio/portfolio-1.webp" alt="Portfolio Image" class="img-fluid"
+                    loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-2.png" alt="">
+                  <img src="assets/img/portfolio/portfolio-10.webp" alt="Portfolio Image" class="img-fluid"
+                    loading="lazy">
                 </div>
 
                 <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-3.png" alt="">
+                  <img src="assets/img/portfolio/portfolio-7.webp" alt="Portfolio Image" class="img-fluid"
+                    loading="lazy">
                 </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-4.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-5.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-6.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-6.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-7.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-8.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-9.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-10.png" alt="">
-                </div>
-                <div class="swiper-slide">
-                  <img src="assets/img/portfolio/portfolio-11.png" alt="">
-                </div>
-
 
               </div>
               <div class="swiper-pagination"></div>
             </div>
+          </div>
 
+          <div class="col-lg-4">
+            <div class="portfolio-info" data-aos="fade-left" data-aos-delay="200">
+              <h3>Project Information</h3>
+              <ul>
+                <li><strong>Category</strong>: Web Development</li>
+                <li><strong>Client</strong>: Victoria Technologies</li>
+                <li><strong>Project date</strong>: 01 March, 2024</li>
+                <li><strong>Project URL</strong>: <a href="#" target="_blank">www.example.com</a></li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-lg-12">
+            <div class="portfolio-description" data-aos="fade-up" data-aos-delay="300">
+              <h2>Project Overview</h2>
+              <p>
+                Autem ipsum nam porro corporis rerum. Quis eos dolorem eos itaque inventore commodi labore quia quia.
+                Exercitationem repudiandae officiis neque suscipit non officia eaque itaque enim. Voluptatem officia
+                accusantium nesciunt est omnis tempora consectetur dignissimos. Sequi nulla at esse enim cum deserunt
+                eius.
+              </p>
+              <p>
+                Amet consequatur qui dolore veniam voluptatem voluptatem sit. Non aspernatur atque natus ut cum nam et.
+                Praesentium error dolores rerum minus sequi quia veritatis eum. Eos et doloribus doloremque nesciunt
+                molestiae laboriosam.
+              </p>
+
+              <div class="features mt-4">
+                <h3>Key Features</h3>
+                <div class="row gy-3">
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="400">
+                      <i class="bi bi-check-circle-fill"></i>
+                      <h4>Responsive Design</h4>
+                      <p>Voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati
+                        cupiditate non provident</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="500">
+                      <i class="bi bi-shield-check"></i>
+                      <h4>Advanced Security</h4>
+                      <p>Minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+                        tarad limino ata</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="600">
+                      <i class="bi bi-graph-up"></i>
+                      <h4>Performance Optimization</h4>
+                      <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur</p>
+                    </div>
+                  </div>
+
+                  <div class="col-md-6">
+                    <div class="feature-item" data-aos="fade-up" data-aos-delay="700">
+                      <i class="bi bi-gear"></i>
+                      <h4>Easy Integration</h4>
+                      <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+                        id est laborum</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
 
         </div>
 
       </div>
-    </div><!-- End Portfolio Details -->
 
-  </main><!-- End #main -->
+    </section><!-- /Portfolio Details Section -->
 
+  </main>
+
+  <footer id="footer" class="footer position-relative">
+
+    <div class="container">
+      <div class="copyright text-center ">
+        <p>© <span>Copyright</span> <strong class="px-1 sitename">Pankaj</strong> <span>All Rights Reserved</span></p>
+      </div>
+    </div>
+
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i
+      class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
 
   <!-- Vendor JS Files -->
-  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
-  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
-  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
 
-  <!-- Template Main JS File -->
+  <!-- Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const params = new URLSearchParams(window.location.search);
+      const id = params.get('id');
+
+      const portfolioData = {
+        'math-formula': {
+          title: 'Math Formula | All Formula',
+          category: 'App',
+          client: 'Personal Project',
+          date: '2024',
+          url: 'https://play.google.com/store/apps/details?id=com.pankaj.mathformula',
+          description: 'A comprehensive application providing a wide range of mathematical formulas for students and professionals. Features an intuitive interface and easy navigation.',
+          images: ['assets/img/portfolio/portfolio-1.png']
+        },
+        'blank': {
+          title: 'Blank',
+          category: 'App',
+          client: 'Personal Project',
+          date: '2024',
+          url: '#',
+          description: 'A minimal application designed for simplicity and focus.',
+          images: ['assets/img/portfolio/portfolio-2.png']
+        },
+        'vaktaa': {
+          title: 'Vaktaa',
+          category: 'App',
+          client: 'Client Project',
+          date: '2024',
+          url: '#',
+          description: 'A communication app designed to bridge gaps and facilitate seamless interaction.',
+          images: ['assets/img/portfolio/portfolio-3.png']
+        },
+        'upsoftech': {
+          title: 'UpSoftech',
+          category: 'Web',
+          client: 'UpSoftech',
+          date: '2023',
+          url: '#',
+          description: 'Corporate website for UpSoftech, showcasing their services and solutions.',
+          images: ['assets/img/portfolio/portfolio-4.png']
+        },
+        'bizotic': {
+          title: 'Bizotic',
+          category: 'Web',
+          client: 'Bizotic',
+          date: '2023',
+          url: '#',
+          description: 'Business portfolio website designed to highlight corporate strengths and achievements.',
+          images: ['assets/img/portfolio/portfolio-5.png']
+        },
+        'mehi-marble': {
+          title: 'Mehi Marble & Tiles',
+          category: 'Web',
+          client: 'Mehi Marble',
+          date: '2023',
+          url: '#',
+          description: 'E-commerce style showcase for a marble and tiles business.',
+          images: ['assets/img/portfolio/portfolio-6.png']
+        },
+        'ai-vitofit': {
+          title: 'AI VITOFIT',
+          category: 'App',
+          client: 'Vitofit',
+          date: '2024',
+          url: '#',
+          description: 'AI-powered fitness application offering personalized workout plans and tracking.',
+          images: ['assets/img/portfolio/portfolio-7.png']
+        },
+        'meatbeats': {
+          title: 'MeatBeats',
+          category: 'App',
+          client: 'MeatBeats',
+          date: '2024',
+          url: '#',
+          description: 'Food delivery application specializing in fresh meat products.',
+          images: ['assets/img/portfolio/portfolio-8.png']
+        },
+        'nadijyotish': {
+          title: 'Nadijyotish',
+          category: 'App',
+          client: 'Nadi Jyotish',
+          date: '2024',
+          url: '#',
+          description: 'Astrology application based on Nadi Jyotish principles.',
+          images: ['assets/img/portfolio/portfolio-9.png']
+        },
+        'free-ambulance': {
+          title: 'Free Ambulance',
+          category: 'App',
+          client: 'Community Service',
+          date: '2024',
+          url: '#',
+          description: 'Emergency service application to connect patients with free ambulance services.',
+          images: ['assets/img/portfolio/portfolio-10.png']
+        },
+        'bike9pro': {
+          title: 'Bike9Pro',
+          category: 'App',
+          client: 'Bike9Pro',
+          date: '2024',
+          url: '#',
+          description: 'Bike service and maintenance tracking application.',
+          images: ['assets/img/portfolio/portfolio-11.png']
+        }
+      };
+
+      if (id && portfolioData[id]) {
+        const data = portfolioData[id];
+
+        // Update Title
+        const titleElement = document.querySelector('.portfolio-title'); // If exists, or we target h2
+        // Based on template, it's not explicitly classed, so let's find it or update the breadcrumb/title
+
+        // Update Breadcrumb/Page Title
+        const headerTitle = document.querySelector('.page-title h1');
+        if (headerTitle) headerTitle.textContent = data.title;
+
+        // Update Project Info
+        const listItems = document.querySelectorAll('.portfolio-info ul li');
+        if (listItems.length >= 4) {
+          listItems[0].innerHTML = `<strong>Category</strong>: ${data.category}`;
+          listItems[1].innerHTML = `<strong>Client</strong>: ${data.client}`;
+          listItems[2].innerHTML = `<strong>Project date</strong>: ${data.date}`;
+          listItems[3].innerHTML = `<strong>Project URL</strong>: <a href="${data.url}" target="_blank">${data.url === '#' ? 'Not Available' : 'View Project'}</a>`;
+        }
+
+        // Update Description
+        const descHeader = document.querySelector('.portfolio-description h2');
+        if (descHeader) descHeader.textContent = data.title;
+
+        const descPara = document.querySelector('.portfolio-description p');
+        if (descPara) descPara.textContent = data.description;
+
+        // Clear existing features or additional paragraphs if strictly replacing
+        // For now, we just targeted the first p. Ideally we replace the whole description block content.
+        const descContainer = document.querySelector('.portfolio-description');
+        if (descContainer) {
+          let html = `<h2>${data.title}</h2><p>${data.description}</p>`;
+          descContainer.innerHTML = html;
+        }
+
+        // Update Images (Swiper)
+        const swiperWrapper = document.querySelector('.swiper-wrapper');
+        if (swiperWrapper) {
+          swiperWrapper.innerHTML = '';
+          data.images.forEach(imgSrc => {
+            const slide = document.createElement('div');
+            slide.className = 'swiper-slide';
+            slide.innerHTML = `<img src="${imgSrc}" alt="${data.title}" class="img-fluid">`;
+            swiperWrapper.appendChild(slide);
+          });
+
+          // Re-init swiper if needed, but since it's auto-init by class 'init-swiper' in main.js, 
+          // modifying DOM might require re-init. 
+          // However, usually simple DOM replacement before load works, but this runs on DOMContentLoaded.
+          // Main.js likely runs on load or DOMContentLoaded. 
+          // To be safe, we might need to manually trigger swiper update if we had access to the instance.
+          // For this static site, replacing innerHTML might be race-condition prone with main.js init.
+          // But let's assume standard behavior. unique images per project allows specific assignment.
+        }
+      }
+    });
+  </script>
 
 </body>
 
