@@ -158,7 +158,7 @@ a.btn-ghost,
   font-family: var(--font-display);
   font-weight: 800;
   letter-spacing: -0.038em;
-  font-size: clamp(2rem, 5vw, 4.85rem);
+  font-size: clamp(1.625rem, 5vw, 4.85rem);
   line-height: 1.08;
   color: #ffffff;
   overflow-wrap: break-word;
@@ -718,6 +718,20 @@ a.btn-ghost,
 .grid-cols-2 { grid-template-columns: repeat(2, minmax(0, 1fr)) !important; }
 .grid-cols-3 { grid-template-columns: repeat(3, minmax(0, 1fr)) !important; }
 .grid-cols-4 { grid-template-columns: repeat(4, minmax(0, 1fr)) !important; }
+.gap-3\.5 { gap: 0.875rem !important; }
+.gap-16 { gap: 4rem !important; }
+@media (min-width: 1024px) {
+  .lg\:gap-16 { gap: 4rem !important; }
+}
+
+.hero-cta-group {
+  gap: 0.875rem !important;
+}
+@media (min-width: 640px) {
+  .hero-cta-group {
+    gap: 1rem !important;
+  }
+}
 
 /* Executive Profile Card */
 .executive-profile-card {
@@ -866,7 +880,7 @@ a.btn-ghost,
   background: #ffffff;
   color: #07080e;
   border: 1px solid rgba(255, 255, 255, 0.1);
-  box-shadow: 0 10px 25px -8px rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 20px -6px rgba(255, 255, 255, 0.22);
   transition: all 0.18s ease;
   cursor: pointer;
 }
